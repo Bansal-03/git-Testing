@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .head,tr,th{
+            border: 1px solid black;
+            height: 30px;
+            width: 400px;
+            background-color: black;
+        }
+        th{
+            background-color:white;
+        }
+        .head1,tr,th{
+            border: 1px solid black;
+            height: 30px;
+            width: 400px;
+        }
+        .head2,tr,th{
+            border: 3px solid darkgreen;
+            height: 30px;
+            width: 400px;
+        }
+        .head2 th{
+            border: 2px solid lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Table and its types
+        1.Data Table
+        2.Component Table
+    -->
+    <!--Component table exp-->
+    <!--------------------------------------------------------------------------------------------->
+    <!--Table 1-->
+        <centre>
+        <table class="head">
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Red Eyes</th>
+            </tr>
+            <tr>
+               <th>height</th>
+               <th>weight</th> 
+            </tr>
+            <tr>
+                <th>Males</th>
+                <th>1.9</th>
+                <th>0.003</th>
+                <th>40%</th>
+            </tr>
+            <tr>
+                <th>Females</th>
+                <th>1.7</th>
+                <th>0.002</th>
+                <th>43%</th>
+            </tr>
+            
+        </table>
+    <!---------------------------------------------------------------------------------------------->
+    <!--Table 2-->
+        <br><hr><br>
+        <table class="head1">
+            <tr>
+                <th colspan="2">Cell 1</th>
+                <th>Cell 2</th>
+                <th>Cell 3</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Cell 4</th>
+                <th> Cell 5</th>
+                <th>Cell 6</th>
+                <th>Cell 7</th>
+            </tr>
+            <tr>
+                <th colspan="3">Cell 8</th>
+            </tr>
+            <tr>
+                <th>Cell 9</th>
+                <th colspan="2">Cell 10</th>
+            </tr>
+        </table>
+<!----------------------------------------------------------------------------------------------------------->
+<!--Table 3-->
+<br><hr><br>
+    <table class="head2">
+        <tr>
+            <th rowspan="2">A</th>
+            <th>B</th>
+            <th rowspan="3">D</th>
+            <th colspan="2">E</th>
+            <th>F</th>
+        </tr>
+        <tr>
+            <th>C</th>
+            <th rowspan="2">G</th>
+            <th rowspan="2">H</th>
+            <th rowspan="2">I</th>
+        </tr>
+        <tr>
+            <th colspan="2">J</th>
+        </tr>
+        <tr>
+            <th colspan="3">K</th>
+            <th>L</th>
+            <th colspan="2">M</th>
+        </tr>
+    </table>
+    </centre>
+</body>
+</html>
